@@ -1,0 +1,20 @@
+#! /bin/bash
+
+# Sudo is required to install everything properly
+if [ "$(whoami)" != "root" ]; then
+  echo -e "This install script must be run with root privileges. Please try again with 'sudo $0'"
+  exit 0;
+fi
+
+DIR=/usr/lib/aIRChat/Content
+if [ -d "$DIR" ]; then
+  rm -r $DIR # Clean out any existing content
+  echo "Removed old aIRChat installation."
+fi
+if [ ! -d "/usr/lib/aIRChat" ]; then
+  mkdir /usr/lib/aIRChat
+  echo "Created directory for aIRChat."
+fi
+mv ./Content $DIR # Move the new content
+cp ./airchat /usr/bin # Copy *nix execution script to a place in PATH
+echo "Finished installing."

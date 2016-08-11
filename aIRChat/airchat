@@ -1,0 +1,14 @@
+#! /bin/bash
+
+if [ ! -d "/usr/lib/aIRChat/Content" ]; then
+  echo "Please run the install script first."
+  exit
+fi
+
+app=/usr/lib/aIRChat/Content/app.js
+
+if hash nodejs 2> /dev/null; then
+  nodejs $app
+else
+  node $app
+fi

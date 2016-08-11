@@ -1,0 +1,54 @@
+/* This file defines the colors for different users' nicks.
+ * You can use any valid CSS color identifier.
+ * Check out http://www.colourlovers.com/ for some great pallet ideas.
+ * If you find a color you like, replace the existing one with either the
+ * hex value (eg: #FF0000 is red), or the RGB value (eg: rgb(255, 0, 0) is red).
+ */
+
+.nick-light-green {
+  color: #2ecc71;
+}
+
+.nick-light-blue {
+  color: #3498db;
+}
+
+.nick-light-purple {
+  color: #9b59b6;
+}
+
+.nick-light-yellow {
+  color: #f1c40f;
+}
+
+.nick-light-orange {
+  color: #e67e22;
+}
+
+.nick-light-red {
+  color: #e74c3c;
+}
+
+.nick-dark-green {
+  color: #27ae60;
+}
+
+.nick-dark-blue {
+  color: #2980b9;
+}
+
+.nick-dark-purple {
+  color: #8e44ad;
+}
+
+.nick-dark-yellow {
+  color: #f39c12;
+}
+
+.nick-dark-orange {
+  color: #d35400;
+}
+
+.nick-dark-red {
+  color: #c0392b;
+}
